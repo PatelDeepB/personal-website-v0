@@ -82,12 +82,13 @@ git commit -m "feat: initial commit of personal developer portfolio"
 
 ### 2. Create Public GitHub Repository
 ```powershell
-gh repo create deep-patel-portfolio --public --source=. --remote=origin --push
+gh repo create personal-website-v0 --public --source=. --remote=origin --push
 ```
 
 ### 3. Deploy Live with GitHub Pages
-1. Go to your repository on GitHub: `https://github.com/PatelDeepB/deep-patel-portfolio`
+1. Go to your repository on GitHub: `https://github.com/PatelDeepB/personal-website-v0`
 2. Click **Settings** > **Pages**.
 3. Under **Branch**, select `main` and root `/ (root)`.
-4. Click **Save**. Within 1 minute, your live site will be ready at:
-   `https://pateldeepb.github.io/deep-patel-portfolio/`
+4. Click **Save**. Your live site is available at:
+   `https://pateldeepb.github.io/personal-website-v0/`
+

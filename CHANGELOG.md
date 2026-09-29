@@ -2,6 +2,13 @@
 
 All notable changes to the personal developer portfolio project will be documented in this file.
 
+## [1.2.0] - 2026-09-29
+
+### Added
+- Created public GitHub repository [PatelDeepB/personal-website-v0](https://github.com/PatelDeepB/personal-website-v0).
+- Configured automated deployment via GitHub Pages at [https://pateldeepb.github.io/personal-website-v0/](https://pateldeepb.github.io/personal-website-v0/).
+- Updated README documentation with exact repository and live deployment endpoints.
+
 ## [1.1.0] - 2026-09-29
 
 ### Changed
