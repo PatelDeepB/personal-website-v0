@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Deep Patel, Full-Stack Developer and Software Engineer specializing in modern responsive web applications and clean code architectures.">
+  <meta name="keywords" content="Deep Patel, Full Stack Developer, Software Engineer, Web Development, Portfolio, GitHub">
+  <meta name="author" content="Deep Patel">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Deep Patel | Full-Stack Developer">
+  <meta property="og:description" content="Explore live web projects, engineering skills, and open source contributions by Deep Patel.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/project_ai_studio.jpg">
+
+  <title>Deep Patel | Full-Stack Developer</title>
+
+  <!-- Modular CSS Stylesheets -->
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/skills.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="site-container header-inner">
+      <a href="#hero" class="brand-link" aria-label="Deep Patel Homepage">
+        <span class="brand-badge">DP</span>
+        <span class="brand-text">Deep<span>.dev</span></span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="cta-button-nav">Get In Touch</a>
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="toggle-line"></span>
+          <span class="toggle-line"></span>
+          <span class="toggle-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-primary" style="text-align: center;">Get In Touch</a>
+  </aside>
+
+  <!-- Main Page Content -->
+  <main id="mainContent">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section site-container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for New Projects & Collaboration</span>
+          </div>
+          <h1 class="hero-title">
+            Crafting Scalable Code & <span class="text-highlight">Modern Digital Products</span>
+          </h1>
+          <p class="hero-description">
+            Hi, I am Deep Patel. I design and build high-performance web applications, intelligent developer workflows, and resilient systems with clean architecture and human-first engineering.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary">View Featured Projects</a>
+            <a href="#contact" class="btn-secondary">Let's Connect</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Clean Code First</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">WCAG</span>
+              <span class="metric-label">AA Accessible</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Git</span>
+              <span class="metric-label">Version Controlled</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="floating-badge badge-top-left">
+              <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+              </svg>
+              <span>Full-Stack Engineer</span>
+            </div>
+            <div class="avatar-image-wrapper">
+              <img 
+                src="assets/images/profile_avatar.jpg" 
+                alt="Portrait photograph of Deep Patel, software developer" 
+                class="avatar-image" 
+                width="380" 
+                height="380"
+              />
+            </div>
+            <div class="floating-badge badge-bottom-right">
+              <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <span>Open Source Focused</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-wrapper projects-section site-container">
+      <header class="section-header">
+        <span class="section-tag">Portfolio Showcase</span>
+        <h2>Featured Engineering Works</h2>
+        <p class="section-subtitle">Real-world web applications built with modern tools, clean architecture, and public source code on GitHub.</p>
+      </header>
+
+      <div class="filter-container" role="toolbar" aria-label="Project Categories">
+        <button type="button" class="filter-btn active" data-category="all">All Projects</button>
+        <button type="button" class="filter-btn" data-category="ai-apps">AI & Web Apps</button>
+        <button type="button" class="filter-btn" data-category="tools-systems">Tools & Systems</button>
+      </div>
+
+      <div id="projectsGrid" class="projects-grid">
+        <!-- Rendered dynamically by scripts/main.js -->
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-wrapper skills-section site-container">
+      <header class="section-header">
+        <span class="section-tag">Core Competencies</span>
+        <h2>Technologies & Tooling</h2>
+        <p class="section-subtitle">Specialized across modern frontend, server architecture, AI integration, and version control workflows.</p>
+      </header>
+
+      <div class="skills-grid">
+        <article class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon-box" aria-hidden="true">
+              <svg class="category-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h3 class="category-title">Frontend</h3>
+          </div>
+          <ul class="skill-chips-list">
+            <li class="skill-chip">JavaScript (ES6+)</li>
+            <li class="skill-chip">TypeScript</li>
+            <li class="skill-chip">HTML5 / Semantic UI</li>
+            <li class="skill-chip">Modern CSS3 / Grid</li>
+            <li class="skill-chip">React / Next.js</li>
+            <li class="skill-chip">Responsive Web Design</li>
+          </ul>
+        </article>
+
+        <article class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon-box" aria-hidden="true">
+              <svg class="category-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"/>
+              </svg>
+            </div>
+            <h3 class="category-title">Backend & APIs</h3>
+          </div>
+          <ul class="skill-chips-list">
+            <li class="skill-chip">Node.js</li>
+            <li class="skill-chip">RESTful APIs</li>
+            <li class="skill-chip">Python</li>
+            <li class="skill-chip">Express</li>
+            <li class="skill-chip">JSON Schema & Zod</li>
+            <li class="skill-chip">Database Modeling</li>
+          </ul>
+        </article>
+
+        <article class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon-box" aria-hidden="true">
+              <svg class="category-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="category-title">AI & Automation</h3>
+          </div>
+          <ul class="skill-chips-list">
+            <li class="skill-chip">OpenAI API & LLMs</li>
+            <li class="skill-chip">Prompt Engineering</li>
+            <li class="skill-chip">Workflow Automation</li>
+            <li class="skill-chip">v0 AI Development</li>
+            <li class="skill-chip">Agentic Systems</li>
+          </ul>
+        </article>
+
+        <article class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon-box" aria-hidden="true">
+              <svg class="category-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h3 class="category-title">DevOps & Git</h3>
+          </div>
+          <ul class="skill-chips-list">
+            <li class="skill-chip">Git Version Control</li>
+            <li class="skill-chip">GitHub Workflows</li>
+            <li class="skill-chip">Vercel Deployment</li>
+            <li class="skill-chip">CI/CD Pipelines</li>
+            <li class="skill-chip">CLI & PowerShell</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-wrapper about-section site-container">
+      <header class="section-header">
+        <span class="section-tag">Engineering Ethos</span>
+        <h2>About Deep Patel</h2>
+        <p class="section-subtitle">Dedicated to human-first code, readable software architecture, and continuous learning.</p>
+      </header>
+
+      <div style="max-width: 48rem; margin: 0 auto; background: var(--color-surface-card); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-2xl); padding: var(--spacing-8);">
+        <p>
+          I am a software developer passionate about building products that combine robust technical architecture with polished, accessible user experiences. I focus on writing software for humans first: clear logic, intentional naming, and modular organization that any engineer can immediately understand and contribute to.
+        </p>
+        <p>
+          Whether building responsive web interfaces, designing backend services, or deploying AI-driven skills on platforms like Vercel and GitHub, I treat every project as an opportunity to raise standards and share knowledge with the open source community.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-wrapper contact-section site-container">
+      <header class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2>Let's Start a Conversation</h2>
+        <p class="section-subtitle">Interested in collaborating, hiring, or discussing modern web and AI development? Send a message below.</p>
+      </header>
+
+      <div class="contact-layout">
+        <div class="contact-info-card">
+          <div>
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-text">Feel free to reach out directly via email, check my latest repositories on GitHub, or drop a note through the form.</p>
+            <ul class="contact-methods-list">
+              <li class="contact-method-item">
+                <div class="method-icon-box" aria-hidden="true">
+                  <svg class="method-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Email Address</span>
+                  <span class="method-value">deepbpatel9898@gmail.com</span>
+                  <button type="button" id="copyEmailBtn" class="copy-email-btn" aria-label="Copy email address to clipboard">
+                    Copy Email
+                  </button>
+                </div>
+              </li>
+              <li class="contact-method-item">
+                <div class="method-icon-box" aria-hidden="true">
+                  <svg class="method-icon" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">GitHub Account</span>
+                  <a href="https://github.com/PatelDeepB" target="_blank" rel="noopener noreferrer" class="method-value">github.com/PatelDeepB</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="senderName" class="form-label">Full Name</label>
+              <input type="text" id="senderName" name="name" class="form-input" placeholder="Your Name" required>
+              <span class="form-feedback">Please enter your name (at least 2 characters).</span>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail" class="form-label">Email Address</label>
+              <input type="email" id="senderEmail" name="email" class="form-input" placeholder="you@example.com" required>
+              <span class="form-feedback">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage" class="form-label">Message</label>
+              <textarea id="senderMessage" name="message" class="form-textarea" placeholder="Tell me about your project or inquiry..." required></textarea>
+              <span class="form-feedback">Please enter a message (at least 5 characters).</span>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn-submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Semantic Footer -->
+  <footer class="site-footer">
+    <div class="site-container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-title">Deep Patel</span>
+        <span class="footer-tagline">Building clean, human-first web applications.</span>
+      </div>
+
+      <div class="footer-links-group">
+        <a href="https://github.com/PatelDeepB" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Visit GitHub Profile">
+          GitHub
+        </a>
+        <a href="#contact" class="footer-social-link">Contact</a>
+        <button type="button" id="backToTopBtn" class="btn-back-to-top" aria-label="Back to top of page">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Feedback -->
+  <aside id="toastNotification" class="toast-container" aria-live="polite">
+    <div class="toast">
+      <svg class="toast-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+      </svg>
+      <span id="toastMessageText">Action completed successfully.</span>
+    </div>
+  </aside>
+
+  <!-- JavaScript Entry Point -->
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/**
+ * Base styles, CSS reset, layout primitives, and accessibility standards.
+ * Minimalist, high-end editorial styling without artificial neon effects.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  background-color: var(--color-background-primary);
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 3rem 3rem;
+  overflow-x: hidden;
+}
+
+/* Accessibility: Skip Navigation Link */
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  padding: var(--spacing-2) var(--spacing-4);
+  background: var(--color-accent-primary);
+  color: var(--color-accent-primary-text);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--radius-md);
+  z-index: 1000;
+  transition: top var(--transition-fast);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Universal Focus Visible Standard */
+:focus-visible {
+  outline: 2px solid var(--color-accent-primary);
+  outline-offset: var(--focus-offset);
+  border-radius: var(--radius-sm);
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  font-weight: var(--font-weight-bold);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw + 1rem, 3.5rem);
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw + 0.5rem, 2.25rem);
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw + 0.25rem, 1.5rem);
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin-bottom: var(--spacing-4);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Images & Media */
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Containers */
+.site-container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --container-padding: 2.5rem;
+  }
+}
+
+.section-wrapper {
+  padding-top: var(--spacing-16);
+  padding-bottom: var(--spacing-16);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto var(--spacing-12);
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: 0.3rem 0.85rem;
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  background: var(--color-accent-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--spacing-3);
+}
+
+.section-subtitle {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  margin-top: var(--spacing-3);
+  line-height: 1.6;
+}
+
+/* Subtle Text Accent - Pure and Understated */
+.text-highlight {
+  color: #ffffff;
+  font-weight: var(--font-weight-semibold);
+}
